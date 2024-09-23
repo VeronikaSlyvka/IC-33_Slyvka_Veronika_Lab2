@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mrs.Pins bookstore</title>
-    <link rel="stylesheet" href="style.css"> <!-- Додаємо підключення до зовнішнього CSS-файлу -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 
 <body>
@@ -24,33 +24,31 @@
     </header>
 
     <main>
-        <p id="main" style="color: white;">.</p>
+        <p id="main">.</p>
         <h1>Книгарня місіс Пінс</h1>
-        <div class="content"> 
-            <img style="height: 350px;" src="./Images/mainPhoto.jpg" alt="Фото"> 
-        </div>
-        
-        <p></p>
-        <span style="font-size: 20px; text-align: center; color:  #0a3737; font-weight: bold;">
-            ТОП-5 причин чому вам варто придбати книжечку саме у нас:
-        </span>
+        <img src="./Images/mainPhoto.jpg" alt="Фото"> 
+       
 
-        <ol>
-            <li style="font-size: 17px;">Унікальний асортимент.</li>
-            <li style="font-size: 17px;">Персональний підхід.</li>
-            <li style="font-size: 17px;">Підтримка місцевих авторів.</li>
-            <li style="font-size: 17px;">Швидка доставка та гарний сервіс.</li>
-            <li style="font-size: 17px;">Ексклюзивні акції та знижки.</li>
-        </ol>
         <hr>
-        
-        <p id="adress" style="font-size: 20px; color: #0a3737; font-weight: bold; text-align: center;">
-            Не любиш купляти онлайн? Не проблема, шукай наш магазин у твоєму місті і приходь до нас!
-        </p>
+        <p id="reasons">ТОП-5 причин чому вам варто придбати книжечку саме у нас:</p>
 
+        <div>
+        <ol>
+            <li>Унікальний асортимент.</li>
+            <li>Персональний підхід.</li>
+            <li>Підтримка місцевих авторів.</li>
+            <li>Швидка доставка та гарний сервіс.</li>
+            <li>Ексклюзивні акції та знижки.</li>
+        </ol>
+    </div>
+        <hr>
+
+        
+        <p id="adress"> Не любиш купляти онлайн? Не проблема, шукай наш магазин у твоєму місті і приходь до нас! </p>
+        <div class="table-container">
         <table>
-            <caption style="font-size: 20px; text-align: center;">Адреса магазинів</caption>
-            <tr>
+            <caption>Адреса магазинів</caption>
+            <tr id="firstTable">
                 <th>Місто</th>
                 <th>Адреса</th>
                 <th>Номер телефона</th>
@@ -91,39 +89,42 @@
                 <td>0986631458</td>
             </tr>
         </table>
+    </div>
         <hr>
 
-        <p id="contacts" style="font-size: 20px; color: #0a3737; font-weight: bold; text-align: center;">
-            Не знайшов книгарні в твоєму місті? Тоді здійснюй покупку онлайн, а якщо будуть питання - ми з радістю допоможемо :)
-        </p>
-        <span style="font-size: 20px; text-align: center;"> Наші контакти</span>
 
+        <p id="contacts"> Не знайшов книгарні в твоєму місті? Тоді здійснюй покупку онлайн, а якщо будуть питання - ми з радістю допоможемо :) </p>
+       <div id="contacts3">
+        <p id="contacts2"> Наші контакти</p>
         <ul>
-            <li style="font-size: 17px;">Tell: +380985654211</li>
-            <li style="font-size: 17px;">Site: <a href="http://127.0.0.1:5501/index.html#adress">http://127.0.0.1:5501/index.html#adress</a></li>
-            <li style="font-size: 17px;">Instagram: @mrsPins.bookstore</li>
-            <li style="font-size: 17px;">Facebook: mrsPins.bookstore</li>
-            <li style="font-size: 17px;">Gmail: mrsPinsBookstore@gmail.com</li>
+            <li>Tell: +380985654211</li>
+            <li>Site: <a href="https://veronikaslyvka.github.io/IC-33_Slyvka_Veronika_Lab2/">https://veronikaslyvka.github.io/IC-33_Slyvka_Veronika_Lab2/</a></li>
+            <li>Instagram: @mrsPins.bookstore</li>
+            <li>Facebook: mrsPins.bookstore</li>
+            <li>Gmail: mrsPinsBookstore@gmail.com</li>
         </ul>
+    </div>
         <hr>
+        
 
-        <p id="questions" style="font-size: 20px; color: #0a3737; font-weight: bold; text-align: center;">
-            Залишилися питання? Вводь свій номер телефону нижче, і ми обов'язково вам зателефонуємо протягом 10-ти хвилин.
-        </p>
-
+        <p id="questions">Залишилися питання? Вводь свій номер телефону нижче, і ми обов'язково вам зателефонуємо протягом 10-ти хвилин.</p>
+        <div class="form">
         <blockquote> Введіть ваш номер телефону</blockquote>        
         <form>
-            <input type='text' name='number' style="width: 400px; height: 50px;"><br><br>
-            <input type='submit' value='Відправити' style="width: 100px; height: 45px;">
+            <input type='text' name='number'><br><br>
+            <input type='submit' value='Відправити' id="send">
         </form> 
+        <p></p>
+    </div>
+
+
     </main>
 
-    <footer> 
-        <p> 
-            <hr>
-            &copy; IC-33 Slyvka Veronika
-        </p>
-        <a href="description.html">Предметна галузь</a>
+
+    <footer>         
+        <hr>
+       &copy; IC-33 Slyvka Veronika   <br>
+        <a target="_blank" href="description.html">Предметна галузь</a> 
     </footer>
 </body>
 </html>
