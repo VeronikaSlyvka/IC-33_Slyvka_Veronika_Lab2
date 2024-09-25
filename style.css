@@ -53,11 +53,20 @@ h1 + img {
     height: 350px; 
 }
 
-#reasons, #adress, #contacts, #questions{
+ #adress, #contacts, #questions{
     font-size: 20px;
     text-align: center;
     color:  #0a3737; 
     font-weight: bold;
+} 
+
+#reasons{
+    font-size: 20px;
+    text-align: center;
+    color:  #0a3737; 
+    font-weight: bold;
+    outline: 3px solid #5b3e31;         /* lab2*/
+    outline-offset: 3px;
 }
 
 div > ol{
@@ -120,8 +129,20 @@ input[type='text'] {
 }
 
 input[type="submit"] {
-    width: 100px; 
+    width: 120px; 
     height: 45px;
+    border-radius: 25px; 
+    background-color: #3a7979;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #0a3737;
+    color: #f0f0f0;
+    cursor: pointer;
 }
 
 footer{
